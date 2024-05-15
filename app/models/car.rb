@@ -1,3 +1,3 @@
-class Car < ActiveRecord
-
+class Car < ApplicationRecord
+    belongs_to :manufacturer
 end

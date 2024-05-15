@@ -1,3 +1,3 @@
-class Manufacturer < ActiveRecord
-    
+class Manufacturer < ApplicationRecord
+    has_many :cars
 end

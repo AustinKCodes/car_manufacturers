@@ -6,6 +6,10 @@ class CarsController < ApplicationController
     def new
     end
 
+    def show
+        @car = Car.find(params[:id])
+    end
+
     def create
         car = Car.new({
             title: params[:title],
